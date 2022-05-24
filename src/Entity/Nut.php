@@ -16,6 +16,9 @@ class Nut
     #[ORM\Column(type: 'string', length: 100)]
     private $name;
 
+    #[ORM\Column(type: 'integer')]
+    private $stock;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -29,6 +32,18 @@ class Nut
     public function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getStock(): ?int
+    {
+        return $this->stock;
+    }
+
+    public function setStock(int $stock): self
+    {
+        $this->stock = $stock;
 
         return $this;
     }
