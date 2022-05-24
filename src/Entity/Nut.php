@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\NutsRepository;
+use App\Repository\NutRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: NutsRepository::class)]
-class Nuts
+#[ORM\Entity(repositoryClass: NutRepository::class)]
+class Nut
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
